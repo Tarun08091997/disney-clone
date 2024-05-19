@@ -39,17 +39,20 @@ export default function Header() {
 ]
 
   return (
-    <div className='flex items-center p-6 justify-between w-[100vW]'>
-        <div className='flex gap-8'>
-          <img src={logo} className='w-[80px] 
-            md:w-[115px] object-cover
+    <div className='flex items-center justify-between w-[100vW] p-6'>
+        <div className='flex sm:gap-3 md:gap-4 lg:gap-8'>
+          <img src={logo} className='object-cover 
+            sm:w-[75px]
+            md:w-[90px]
+            lg:w-[125px] 
+                       
           '/>
 
           {menu.map((item)=>(
             <HeaderItem name={item.name} Icon = {item.icon} />
           ))}
         </div>
-        <img src={avtar} className='w-[50px] rounded-full' />
+        <img src={avtar} className='sm:w-[25px] md:w-[30px] lg:w-[50px]   rounded-full' />
     </div>
   )
 }

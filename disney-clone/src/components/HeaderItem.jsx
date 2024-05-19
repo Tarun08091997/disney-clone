@@ -2,8 +2,10 @@ import React from 'react'
 
 export default function HeaderItem({name , Icon}) {
   return (
-    <div className='text-white flex items-center gap-5 
-      text-[18px] font-semibold cursor-pointer
+    <div className='text-white flex items-center font-semibold cursor-pointer
+     sm:gap-0 sm:text-[13px]
+     md:gap-1 md:text-[15px]
+     lg:gap-3 lg:text-[18px] 
     '>
         <Icon />
         {name}
