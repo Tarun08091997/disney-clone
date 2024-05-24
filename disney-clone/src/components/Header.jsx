@@ -40,8 +40,9 @@ export default function Header() {
 
   return (
     <div className='flex items-center justify-between w-[100vW] p-6'>
-        <div className='flex sm:gap-3 md:gap-4 lg:gap-8'>
+        <div className='flex gap-2 sm:gap-3 md:gap-4 lg:gap-8'>
           <img src={logo} className='object-cover 
+            w-[35px]
             sm:w-[75px]
             md:w-[90px]
             lg:w-[125px] 
@@ -52,7 +53,7 @@ export default function Header() {
             <HeaderItem name={item.name} Icon = {item.icon} />
           ))}
         </div>
-        <img src={avtar} className='sm:w-[25px] md:w-[30px] lg:w-[50px]   rounded-full' />
+        <img src={avtar} className='w-[20px] sm:w-[25px] md:w-[30px] lg:w-[50px]   rounded-full' />
     </div>
   )
 }
