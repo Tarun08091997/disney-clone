@@ -45,8 +45,8 @@ export default function ProductionHouse() {
     ]
   return (
     <div className='flex md:my-10 justify-between my-3 px-6'>
-        {productionHouseList.map((item)=>(
-            <div  className='w-[75px] border-[3px] border-gray-800 hover:border-[2px] hover:border-gray-100 hover:scale-110 md:w-[200px] md:hover:border-[3px] transition-all duration-300 ease-in-out rounded-xl shadow-xl shadow-gray-800 cursor-pointer'>
+        {productionHouseList.map((item , index)=>(
+            <div key = {index}  className='w-[75px] sm:w-[100px] border-[3px] border-gray-800 hover:border-[2px] hover:border-gray-100 hover:scale-110 md:w-[150px] lg:w-[200px] md:hover:border-[3px] transition-all duration-300 ease-in-out rounded-xl shadow-xl shadow-gray-800 cursor-pointer'>
                 
                 <img src = {item.image} className=' w-full z-10'/>
                 <video src={item.video} autoPlay loop playsInline className='absolute top-0 left-0 rounded-xl z-0 opacity-0  hover:opacity-50'/>

@@ -20,9 +20,6 @@ export default function Slider() {
         getTrandingMovieData();
     },[])
 
-    // useEffect(()=>{
-    //     // console.log(movieList);
-    // } , [movieList])
 
 
     const scrollLeft = () =>{
