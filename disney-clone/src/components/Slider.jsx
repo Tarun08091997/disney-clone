@@ -36,12 +36,12 @@ export default function Slider() {
   return (
 
     <div>
-        <HiChevronLeft className=' text-white text-[40px] absolute mt-[150px] ml-1 cursor-pointer' onClick={() => scrollLeft()}/>
-        <HiChevronRight className=' text-white text-[40px] absolute mt-[150px] right-1 cursor-pointer' onClick={() => scrollRight()}/>
-        <div className='w-full flex overflow-x-auto px-5 py-3 scrollbar-hide scroll-smooth ' ref={scrollRef}>
+        <HiChevronLeft className=' text-white text-[40px] absolute mt-[150px] ml-1 cursor-pointer  hover:scale-150 transition-all duration-100 ease-in-out' onClick={() => scrollLeft()}/>
+        <HiChevronRight className=' text-white text-[40px] absolute mt-[150px] right-1 cursor-pointer hover:scale-150 transition-all duration-100 ease-in-out' onClick={() => scrollRight()}/>
+        <div className='w-full flex overflow-x-auto px-5 py-3 scrollbar-hide scroll-smooth' ref={scrollRef}>
         {movieList.map((movie , index) =>(
-            <img className='h-[310px] min-w-full 
-              object-cover object-left-top 
+            <img className='h-[330px] min-w-full 
+              object-left-top object-cover
               mr-4 rounded-md hover:border-[3px] border-gray-100 transition-all duration-100 ease-in-out'
              key ={index} src={IMAGE_BASE_URL + movie.backdrop_path} />
         ))}
